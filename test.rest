@@ -1,0 +1,29 @@
+GET http://localhost:8080/
+
+###
+
+GET http://localhost:8080/products/652ec934e536927b8235fb8c
+
+###
+POST http://localhost:8080/api/products/
+Content-Type: application/json
+
+{
+    "name": "Product 1",
+    "description": "Product description",
+    "price": 19.00,
+    "quantity": 2,
+    "category": "Men"
+}
+
+###
+DELETE http://localhost:8080/products/652ec4b684874a12cb75bb95
+
+
+###
+ PUT http://localhost:8080/products/652ead551c243e6c78c845b6
+Content-Type: application/json
+
+{
+    "name": "Product Test Number 25555"
+}
